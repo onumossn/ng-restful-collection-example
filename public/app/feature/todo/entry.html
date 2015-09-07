@@ -1,0 +1,16 @@
+<md-content layout-padding>
+  <form name="todoForm">
+    <md-input-container>
+      <label>Name</label>
+      <input required name="name" ng-model="todoItem.name">
+      <div ng-messages="todoForm.name.$error">
+        <div ng-message="required">This is required.</div>
+      </div>
+    </md-input-container>
+    <md-input-container>
+      <label>Description</label>
+      <input name="description" ng-model="todoItem.description">
+    </md-input-container>
+    <md-button ng-disabled="todoForm.$invalid" ng-click="todo.save(todoItem, saveSuccess, saveError)" class="md-raised md-primary">Save</md-button>
+  </form>
+</md-content>

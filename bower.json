@@ -1,0 +1,25 @@
+{
+  "name": "Todo List",
+  "version": "0.0.0",
+  "homepage": "https://github.com/onumossn/ng-restful-collection-example",
+  "authors": [
+    "Mohammed Nauage <mohammed.nauage.gsa@gmail.com>"
+  ],
+  "description": "Example todo list using ng-restful-collection",
+  "main": "app.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.5",
+    "angular-material": "~0.10.1",
+    "angular-messages": "~1.4.5",
+    "ng-restful-collection": "~1.0.0",
+    "angular-ui-router": "~0.2.15"
+  }
+}

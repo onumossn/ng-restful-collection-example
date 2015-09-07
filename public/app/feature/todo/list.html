@@ -1,0 +1,18 @@
+<md-content>
+  <md-list>
+    <md-list-item class="md-3-line" ng-repeat="item in todo.data.collection">
+      <md-button ui-sref="todo.edit({ id: item._id })" class="md-no-style" style="margin:0px;">
+        <div class="md-list-item-text">
+          <h3>{{ item.name }}</h3>
+          <p>{{ item.description }}</p>
+        </div>
+        <md-divider ng-if="!$last"></md-divider>
+      </md-button>
+      <md-button ng-click="todo.remove(item)">Remove</md-button>
+    </md-list-item>
+  </md-list>
+
+  <md-button ui-sref="todo.add" class="md-fab" aria-label="Add todo" style="position: fixed; right: 32px; bottom: 32px">
+    <span style="font-size: 32px; line-height: 1.6;">+</span>
+  </md-button>
+</md-content>
